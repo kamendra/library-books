@@ -1,12 +1,11 @@
-import helper
+import node
 
 # Initializing the filepaths
 prompt_file = "promptsPS9.txt"
 
-
 def main():
     """This is the main function which reads the promptsPS9.txt and test the binary ATD"""
-    libraryTree = helper.LibraryTree()
+    libraryTree = node.LibraryTree()
     with open(prompt_file, "r") as f:
         for line in f.readlines():
             if "check" in line:
